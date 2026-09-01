@@ -3,25 +3,66 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-primary: #2f6e68;
+  --color-primary-light: #7fc3ba;
+  --color-secondary: #1c2e2c;
+  --color-accent: #c8a96a;
+  --color-bg: #fbf9f5;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f1efe9;
+  --color-border: #e4e0d6;
+  --color-text: #1c2420;
+  --color-text-muted: #5c6b67;
+  --color-cta: #2f6e68;
+  --color-cta-hover: #24534f;
+  --color-whatsapp: #25d366;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  border-color: var(--color-border);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* Visible-only-in-non-production marker for unverified content, per DESIGN-SYSTEM.md */
+.placeholder-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #9a6b2a;
+  background: #fbeed9;
+  border: 1px dashed #c8a96a;
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
 }
