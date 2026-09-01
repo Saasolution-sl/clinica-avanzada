@@ -100,9 +100,17 @@ export function Footer() {
       <div className="border-t border-white/10">
         <Container className="flex flex-col items-center justify-between gap-3 py-6 text-xs text-white/50 sm:flex-row">
           <p>© {year} Clínica Avanzada. {t("rights")}</p>
-          <div className="flex gap-5">
+          <div className="flex flex-col items-center gap-3 sm:flex-row sm:gap-5">
             <Link href="/privacidad" className="hover:text-white">{t("privacy")}</Link>
             <Link href="/cookies" className="hover:text-white">{t("cookiesLink")}</Link>
+            <a
+              href="https://saasolution.es"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white"
+            >
+              Designed with care by SaaSolution SL
+            </a>
           </div>
         </Container>
       </div>
