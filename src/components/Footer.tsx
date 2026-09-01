@@ -109,7 +109,7 @@ export function Footer() {
               rel="noopener noreferrer"
               className="hover:text-white"
             >
-              Designed with care by SaaSolution SL
+              {t("credit")}
             </a>
           </div>
         </Container>

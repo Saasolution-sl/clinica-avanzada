@@ -283,7 +283,8 @@
     "phoneLabel": "Tel/WhatsApp",
     "rights": "Todos os direitos reservados.",
     "privacy": "Política de privacidade",
-    "cookiesLink": "Política de cookies"
+    "cookiesLink": "Política de cookies",
+    "credit": "Desenvolvido com dedicação pela SaaSolution SL"
   },
   "hours": {
     "mondayFriday": "Segunda a sexta",
