@@ -1,14 +1,21 @@
 "use client";
 
-import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { MessageCircle } from "lucide-react";
 import { InstagramIcon as Instagram } from "./icons/InstagramIcon";
 import { Container } from "./Container";
-import { site, buildWhatsappUrl, whatsappBaseMessage } from "@/content/site";
+import { site, buildWhatsappUrl } from "@/content/site";
 import { treatments } from "@/content/treatments";
 import { track } from "@/lib/analytics";
+import type { Locale } from "@/i18n/routing";
 
 export function Footer() {
+  const t = useTranslations("footer");
+  const tn = useTranslations("nav");
+  const th = useTranslations("hours");
+  const tw = useTranslations("whatsapp");
+  const locale = useLocale() as Locale;
   const year = new Date().getFullYear();
 
   return (
@@ -19,25 +26,24 @@ export function Footer() {
             Clínica Avanzada
           </p>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/65">
-            Ortodoncia y estética dental con atención especializada y
-            planificación de tratamiento personalizada.
+            {t("description")}
           </p>
           <div className="mt-6 flex gap-3">
             <a
               href={site.instagram.url}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Instagram de Clínica Avanzada"
+              aria-label="Instagram"
               onClick={() => track("instagram_clicked", { source: "footer" })}
               className="flex h-10 w-10 items-center justify-center rounded-full border border-white/25 hover:bg-white/10"
             >
               <Instagram className="h-4 w-4" />
             </a>
             <a
-              href={buildWhatsappUrl(whatsappBaseMessage)}
+              href={buildWhatsappUrl(tw("base"))}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="WhatsApp de Clínica Avanzada"
+              aria-label="WhatsApp"
               onClick={() => track("whatsapp_clicked", { source: "footer" })}
               className="flex h-10 w-10 items-center justify-center rounded-full border border-white/25 hover:bg-white/10"
             >
@@ -48,27 +54,27 @@ export function Footer() {
 
         <div>
           <p className="text-xs font-semibold uppercase tracking-wider text-white/50">
-            Navegación
+            {t("navTitle")}
           </p>
           <ul className="mt-4 space-y-2 text-sm">
-            <li><Link href="/tratamientos" className="hover:text-white">Tratamientos</Link></li>
-            <li><Link href="/casos-clinicos" className="hover:text-white">Casos clínicos</Link></li>
-            <li><Link href="/equipo" className="hover:text-white">Equipo</Link></li>
-            <li><Link href="/clinica" className="hover:text-white">La clínica</Link></li>
-            <li><Link href="/preguntas-frecuentes" className="hover:text-white">Preguntas frecuentes</Link></li>
-            <li><Link href="/contacto" className="hover:text-white">Contacto</Link></li>
+            <li><Link href="/tratamientos" className="hover:text-white">{tn("treatments")}</Link></li>
+            <li><Link href="/casos-clinicos" className="hover:text-white">{tn("cases")}</Link></li>
+            <li><Link href="/equipo" className="hover:text-white">{tn("team")}</Link></li>
+            <li><Link href="/clinica" className="hover:text-white">{tn("clinic")}</Link></li>
+            <li><Link href="/preguntas-frecuentes" className="hover:text-white">{tn("faq")}</Link></li>
+            <li><Link href="/contacto" className="hover:text-white">{tn("contact")}</Link></li>
           </ul>
         </div>
 
         <div>
           <p className="text-xs font-semibold uppercase tracking-wider text-white/50">
-            Tratamientos
+            {t("treatmentsTitle")}
           </p>
           <ul className="mt-4 space-y-2 text-sm">
-            {treatments.map((t) => (
-              <li key={t.slug}>
-                <Link href={`/tratamientos/${t.slug}`} className="hover:text-white">
-                  {t.name}
+            {treatments.map((tItem) => (
+              <li key={tItem.id}>
+                <Link href={{ pathname: "/tratamientos/[slug]", params: { slug: tItem.slug[locale] } }} className="hover:text-white">
+                  {tItem.name[locale]}
                 </Link>
               </li>
             ))}
@@ -77,14 +83,14 @@ export function Footer() {
 
         <div>
           <p className="text-xs font-semibold uppercase tracking-wider text-white/50">
-            Contacto
+            {t("contactTitle")}
           </p>
           <ul className="mt-4 space-y-2 text-sm text-white/70">
             <li>{site.address.value}</li>
-            <li>Tel/WhatsApp: {site.phone.value}</li>
+            <li>{t("phoneLabel")}: {site.phone.value}</li>
             {site.hours.value.map((h) => (
-              <li key={h.day}>
-                {h.day}: {h.hours}
+              <li key={h.dayKey}>
+                {th(h.dayKey)}: {h.hours}
               </li>
             ))}
           </ul>
@@ -93,10 +99,10 @@ export function Footer() {
 
       <div className="border-t border-white/10">
         <Container className="flex flex-col items-center justify-between gap-3 py-6 text-xs text-white/50 sm:flex-row">
-          <p>© {year} Clínica Avanzada. Todos los derechos reservados.</p>
+          <p>© {year} Clínica Avanzada. {t("rights")}</p>
           <div className="flex gap-5">
-            <Link href="/privacidad" className="hover:text-white">Política de privacidad</Link>
-            <Link href="/cookies" className="hover:text-white">Política de cookies</Link>
+            <Link href="/privacidad" className="hover:text-white">{t("privacy")}</Link>
+            <Link href="/cookies" className="hover:text-white">{t("cookiesLink")}</Link>
           </div>
         </Container>
       </div>

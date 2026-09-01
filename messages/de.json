@@ -1,0 +1,295 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "treatments": "Behandlungen",
+    "cases": "Patientenfälle",
+    "team": "Team",
+    "clinic": "Unsere Praxis",
+    "faq": "Häufige Fragen",
+    "contact": "Kontakt",
+    "bookCta": "Beratungstermin vereinbaren",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen"
+  },
+  "language": {
+    "label": "Sprache",
+    "es": "Español",
+    "pt": "Português",
+    "en": "English",
+    "de": "Deutsch"
+  },
+  "hero": {
+    "eyebrow": "Kieferorthopädie · Ästhetische Zahnmedizin · Paraguay",
+    "title": "Fortschrittliche Kieferorthopädie für ein Lächeln, das zu Ihnen passt.",
+    "description": "In der Clínica Avanzada verbinden wir fachärztliche Betreuung, moderne Technologie und eine Behandlungsplanung, die auf jeden einzelnen Patienten abgestimmt ist.",
+    "bookCta": "Beratungstermin vereinbaren",
+    "whatsappCta": "Kontakt über WhatsApp"
+  },
+  "trust": {
+    "eyebrow": "Warum wir",
+    "title": "Eine Praxis, die sich am Patienten orientiert",
+    "items": [
+      {
+        "title": "Fachärztliche Betreuung",
+        "description": "Jeder Behandlungsplan basiert auf der individuellen klinischen Untersuchung des Patienten."
+      },
+      {
+        "title": "Fortschrittliche Technologie",
+        "description": "Diagnose und Behandlungsplanung unterstützt durch moderne kieferorthopädische Verfahren."
+      },
+      {
+        "title": "Individuelle Behandlungen",
+        "description": "Nicht jedes Lächeln erhält denselben Ansatz: Der Plan wird an jede Diagnose angepasst."
+      },
+      {
+        "title": "Professionelle Betreuung",
+        "description": "Klare Kommunikation in jeder Phase, von der ersten Beratung bis zur Retention."
+      }
+    ]
+  },
+  "treatmentsSection": {
+    "eyebrow": "Behandlungen",
+    "title": "Unsere Behandlungen entdecken",
+    "description": "Kieferorthopädie und ästhetische Zahnmedizin mit einem individuell entwickelten Plan.",
+    "viewAll": "Alle ansehen",
+    "learnMore": "Mehr erfahren",
+    "placeholderBadge": "Inhalt noch zu bestätigen",
+    "whatIsIt": "Was ist das?",
+    "whoFor": "Für wen ist es geeignet?",
+    "howItWorks": "So funktioniert der Ablauf",
+    "benefits": "Vorteile",
+    "faqTitle": "Häufige Fragen",
+    "disclaimer": "Die Informationen auf dieser Seite sind allgemein und ersetzen keine individuelle klinische Untersuchung. Wir garantieren keine bestimmten Ergebnisse oder Behandlungsdauern – diese werden im Beratungsgespräch mit dem Facharzt festgelegt.",
+    "bookEvaluation": "Untersuchungstermin vereinbaren",
+    "consultWhatsapp": "Über WhatsApp anfragen",
+    "listTitle": "Kieferorthopädische Behandlungen",
+    "listDescription": "Jede Behandlung beginnt mit einer individuellen klinischen Untersuchung, um den passenden Ansatz festzulegen."
+  },
+  "journey": {
+    "eyebrow": "Ablauf",
+    "title": "Ihr Behandlungsweg",
+    "steps": [
+      {
+        "title": "Erstberatung",
+        "description": "Wir besprechen gemeinsam mit dem Facharzt Ihre Anliegen und Ziele."
+      },
+      {
+        "title": "Diagnose",
+        "description": "Klinische Untersuchung und je nach Fall ergänzende diagnostische Verfahren."
+      },
+      {
+        "title": "Behandlungsplan",
+        "description": "Vorstellung der empfohlenen Behandlungsstrategie."
+      },
+      {
+        "title": "Beginn",
+        "description": "Start der vereinbarten kieferorthopädischen Behandlung."
+      },
+      {
+        "title": "Verlaufskontrolle",
+        "description": "Regelmäßige klinische Kontrollen zur Überwachung des Fortschritts."
+      },
+      {
+        "title": "Retention",
+        "description": "Begleitung, um das erzielte Ergebnis zu erhalten."
+      }
+    ]
+  },
+  "instagram": {
+    "eyebrow": "Soziale Medien",
+    "title": "Folgen Sie uns auf Instagram",
+    "description": "Inhalte, Behandlungen und Neuigkeiten der Praxis direkt auf unserem Profil."
+  },
+  "finalCta": {
+    "eyebrow": "Los geht's",
+    "title": "Ihr Lächeln verdient einen Plan, der zu Ihnen passt",
+    "description": "Vereinbaren Sie Ihren Beratungstermin oder schreiben Sie uns über WhatsApp – gemeinsam gehen wir den ersten Schritt.",
+    "bookCta": "Beratungstermin vereinbaren",
+    "contactCta": "Kontaktdaten ansehen"
+  },
+  "cases": {
+    "eyebrow": "Ergebnisse",
+    "title": "Patientenfälle",
+    "description": "Wir veröffentlichen ausschließlich Fälle mit ausdrücklicher Zustimmung des Patienten. Ziehen Sie den Regler, um Vorher und Nachher zu vergleichen.",
+    "empty": "Derzeit liegen noch keine freigegebenen Patientenfälle für die Veröffentlichung auf dieser Website vor. Dieser Bereich wird aktualisiert, sobald die Praxis Fälle mit unterschriebener Einwilligung des Patienten bestätigt.",
+    "emptyFiltered": "In dieser Kategorie sind derzeit keine Fälle veröffentlicht.",
+    "before": "Vorher",
+    "after": "Nachher",
+    "compareAria": "Vorher und Nachher vergleichen",
+    "filters": {
+      "all": "Alle",
+      "aligners": "Aligner",
+      "braces": "Brackets",
+      "adults": "Erwachsene",
+      "teens": "Jugendliche"
+    },
+    "initialSituation": "Ausgangssituation",
+    "treatmentSelected": "Gewählte Behandlung",
+    "approach": "Vorgehensweise"
+  },
+  "team": {
+    "eyebrow": "Fachärzte",
+    "title": "Unser Team",
+    "description": "Sie entscheiden sich für einen Facharzt, nicht nur für eine zahnärztliche Leistung.",
+    "photoPending": "Professionelles Foto",
+    "education": "Ausbildung",
+    "certifications": "Zertifizierungen",
+    "expertise": "Fachgebiete"
+  },
+  "clinic": {
+    "eyebrow": "Unsere Räume",
+    "title": "Unsere Praxis",
+    "description": "Eine Umgebung, die jeden Besuch klar, angenehm und professionell macht.",
+    "spaces": [
+      "Empfang",
+      "Behandlungsraum",
+      "Ausstattung",
+      "Diagnosetechnologie",
+      "Patientenbereich"
+    ],
+    "photosNote": "Echte Fotos der Praxis stehen für diese Website noch nicht zur Verfügung. Dieser Bereich verwendet Platzhalter, bis autorisiertes Bildmaterial der Praxis vorliegt."
+  },
+  "faq": {
+    "eyebrow": "Hilfe",
+    "title": "Häufige Fragen",
+    "description": "Allgemeine Informationen zur Kieferorthopädie. Jede Behandlung wird im Beratungsgespräch individuell beurteilt.",
+    "items": [
+      {
+        "question": "Wann sollte die erste kieferorthopädische Beratung stattfinden?",
+        "answer": "Eine erste Untersuchung ist sinnvoll, sobald die Frage aufkommt – unabhängig vom Alter. Der Facharzt legt je nach Fall den geeignetsten Zeitpunkt für den Behandlungsbeginn fest."
+      },
+      {
+        "question": "Können auch Erwachsene eine kieferorthopädische Behandlung erhalten?",
+        "answer": "Ja, Kieferorthopädie bei Erwachsenen ist gängige Praxis. Der Behandlungsplan wird unabhängig vom Alter an die individuelle klinische Situation jedes Patienten angepasst."
+      },
+      {
+        "question": "Brackets oder Aligner?",
+        "answer": "Die Wahl hängt von der Diagnose, der Komplexität des Falls und den Präferenzen des Patienten ab. Der Facharzt beurteilt im Beratungsgespräch, welche Option am besten geeignet ist."
+      },
+      {
+        "question": "Tut eine kieferorthopädische Behandlung weh?",
+        "answer": "Ein gewisses Druckgefühl oder eine erhöhte Empfindlichkeit sind üblich, besonders in den ersten Tagen nach dem Einsetzen oder nach bestimmten Kontrollterminen. Das Team berät Sie gerne, wie Sie damit umgehen können."
+      },
+      {
+        "question": "Wie lange dauert eine Behandlung?",
+        "answer": "Die Dauer variiert je nach Diagnose und Komplexität des jeweiligen Falls. Der Facharzt gibt bei der Erstuntersuchung eine individuelle Einschätzung ab, die im Laufe der Behandlung angepasst werden kann."
+      },
+      {
+        "question": "Wie oft finden Kontrolltermine statt?",
+        "answer": "Die Häufigkeit der Kontrolltermine legt der Facharzt je nach Behandlungsart und deren Verlauf fest. Die regelmäßige Wahrnehmung der Termine ist wichtig für den Behandlungsfortschritt."
+      },
+      {
+        "question": "Was passiert nach Abschluss der kieferorthopädischen Behandlung?",
+        "answer": "In der Regel folgt eine Retentionsphase, um das erzielte Ergebnis zu erhalten. Der Facharzt erklärt das für den jeweiligen Fall empfohlene Retentionsschema."
+      },
+      {
+        "question": "Brauche ich vorab Untersuchungen?",
+        "answer": "Je nach Diagnose kann der Facharzt ergänzende Untersuchungen (z. B. Röntgenaufnahmen) anfordern, um die Behandlung angemessen zu planen."
+      },
+      {
+        "question": "Wie kann ich einen Termin vereinbaren?",
+        "answer": "Sie können einen Termin über das Formular auf der Seite „Termin vereinbaren“ buchen oder uns von jeder Seite der Website aus direkt über WhatsApp schreiben."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "title": "Wir sind für Sie da",
+    "description": "Schreiben Sie uns über WhatsApp oder vereinbaren Sie direkt Ihren Beratungstermin.",
+    "address": "Adresse",
+    "phone": "Telefon",
+    "whatsapp": "WhatsApp",
+    "whatsappCta": "Über WhatsApp schreiben",
+    "email": "E-Mail",
+    "toConfirm": "Noch zu bestätigen",
+    "hours": "Öffnungszeiten",
+    "instagram": "Instagram",
+    "directions": "Route berechnen",
+    "mapUnavailable": "Die Karte wird aktiviert, sobald die Praxis ihre genaue Adresse bestätigt hat. Wir veröffentlichen keinen unbestätigten Standort."
+  },
+  "booking": {
+    "eyebrow": "Termin",
+    "title": "Beratungstermin vereinbaren",
+    "description": "Füllen Sie Ihre Daten aus – wir melden uns bei Ihnen, um Tag und Uhrzeit zu bestätigen.",
+    "fields": {
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "phone": "Telefon",
+      "whatsapp": "WhatsApp",
+      "email": "E-Mail",
+      "treatment": "Art der Beratung",
+      "treatmentPlaceholder": "Option auswählen",
+      "patientStatus": "Patient",
+      "newPatient": "Neuer Patient",
+      "existingPatient": "Bestehender Patient",
+      "preferredDate": "Wunschtermin (Datum)",
+      "preferredTime": "Wunschzeit",
+      "message": "Nachricht (optional)"
+    },
+    "submit": "Termin anfragen",
+    "submitting": "Wird gesendet…",
+    "successTitle": "Alles erledigt, {name}!",
+    "successBody": "Wir haben Ihre Terminanfrage erhalten. Wir melden uns in Kürze, um Tag und Uhrzeit zu bestätigen.",
+    "continueWhatsapp": "Über WhatsApp fortfahren",
+    "genericError": "Ihre Anfrage konnte gerade nicht gesendet werden. Sie können es erneut versuchen oder uns über WhatsApp schreiben.",
+    "validation": {
+      "firstName": "Bitte geben Sie Ihren Vornamen ein",
+      "lastName": "Bitte geben Sie Ihren Nachnamen ein",
+      "phone": "Bitte geben Sie eine gültige Telefonnummer ein",
+      "whatsapp": "Bitte geben Sie eine gültige WhatsApp-Nummer ein",
+      "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+      "treatment": "Bitte wählen Sie eine Art der Beratung aus",
+      "preferredDate": "Bitte wählen Sie ein Datum aus",
+      "preferredTime": "Bitte wählen Sie eine Uhrzeit aus"
+    }
+  },
+  "whatsapp": {
+    "base": "Hallo Clínica Avanzada 👋 Ich hätte gerne weitere Informationen und möchte einen Beratungstermin vereinbaren.",
+    "treatment": "Hallo Clínica Avanzada 👋 Ich hätte gerne weitere Informationen zu {treatment}.",
+    "bookingConfirmation": "Hallo Clínica Avanzada 👋 Ich habe gerade als {name} einen Beratungstermin ({treatment}) angefragt. Ich möchte die Details gerne bestätigen."
+  },
+  "cookies": {
+    "bannerText": "Wir verwenden essenzielle Cookies für den Betrieb der Website und, mit Ihrer Zustimmung, Analyse-Cookies, um zu verstehen, wie sie genutzt wird.",
+    "moreInfo": "Weitere Informationen",
+    "decline": "Nicht notwendige ablehnen",
+    "accept": "Alle akzeptieren",
+    "pageTitle": "Cookie-Richtlinie",
+    "intro": "Diese Website verwendet essenzielle Cookies, die für den grundlegenden Betrieb erforderlich sind, sowie optional Analyse-Cookies (z. B. Google Analytics) und Marketing-Cookies (z. B. Meta Pixel), die nur geladen werden, wenn Sie deren Verwendung im Cookie-Hinweis zustimmen.",
+    "essential": "Essenziell",
+    "essentialDesc": "Speichern Ihre Cookie-Einstellung und ermöglichen den Betrieb der Website.",
+    "analytics": "Analyse (optional)",
+    "analyticsDesc": "Helfen uns zu verstehen, wie die Website genutzt wird, um sie zu verbessern.",
+    "marketing": "Marketing (optional)",
+    "marketingDesc": "Ermöglichen die Messung der Wirksamkeit von Kampagnen.",
+    "outro": "Sie können Ihre Einstellung jederzeit ändern, indem Sie die Daten dieser Website in Ihren Browsereinstellungen löschen."
+  },
+  "privacy": {
+    "pageTitle": "Datenschutzerklärung",
+    "p1": "Diese Richtlinie beschreibt in allgemeiner Form, wie die Clínica Avanzada mit den Informationen umgeht, die Besucher über diese Website teilen (zum Beispiel beim Ausfüllen des Terminanfrage-Formulars).",
+    "notice": "Hinweis:",
+    "p2": "Der konkrete Rechtstext dieser Richtlinie (Verantwortlicher für die Datenverarbeitung, rechtliche Kontaktdaten, in Paraguay anwendbare Rechtsgrundlage, Aufbewahrungsfristen sowie das Verfahren zur Ausübung von Auskunfts-, Berichtigungs- und Löschungsrechten) muss von der Praxis und/oder einem Rechtsberater erstellt oder geprüft werden, bevor er veröffentlicht wird. Für diesen Text wurden keine erfundenen Unternehmens- oder Rechtsangaben verwendet.",
+    "p3": "Die über das Terminformular übermittelten Daten (Vorname, Nachname, Telefon, WhatsApp, E-Mail, Art der Beratung und Nachricht) werden ausschließlich zur Bearbeitung der Terminanfrage und zur Kontaktaufnahme mit dem Patienten verwendet."
+  },
+  "notFound": {
+    "title": "Diese Seite konnten wir nicht finden",
+    "description": "Der Link ist möglicherweise fehlerhaft oder die Seite wurde verschoben.",
+    "cta": "Zurück zur Startseite"
+  },
+  "footer": {
+    "description": "Kieferorthopädie und ästhetische Zahnmedizin mit fachärztlicher Betreuung und individueller Behandlungsplanung.",
+    "navTitle": "Navigation",
+    "treatmentsTitle": "Behandlungen",
+    "contactTitle": "Kontakt",
+    "phoneLabel": "Telefon/WhatsApp",
+    "rights": "Alle Rechte vorbehalten.",
+    "privacy": "Datenschutzerklärung",
+    "cookiesLink": "Cookie-Richtlinie"
+  },
+  "hours": {
+    "mondayFriday": "Montag bis Freitag",
+    "saturday": "Samstag"
+  },
+  "common": {
+    "placeholderBadge": "Inhalt noch zu bestätigen"
+  }
+}

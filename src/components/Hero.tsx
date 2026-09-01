@@ -1,14 +1,18 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { MessageCircle, CalendarCheck } from "lucide-react";
 import { Container } from "./Container";
 import { Button } from "./Button";
 import { PhotoPlaceholder } from "./PhotoPlaceholder";
-import { buildWhatsappUrl, whatsappBaseMessage } from "@/content/site";
+import { buildWhatsappUrl } from "@/content/site";
 import { track } from "@/lib/analytics";
 
 export function Hero() {
+  const t = useTranslations("hero");
+  const tw = useTranslations("whatsapp");
+
   return (
     <section className="relative overflow-hidden">
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,rgba(127,195,186,0.25),transparent_60%)]" />
@@ -20,15 +24,13 @@ export function Hero() {
           className="order-1 lg:col-start-1 lg:row-start-1"
         >
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-primary">
-            Ortodoncia · Estética dental · Paraguay
+            {t("eyebrow")}
           </p>
           <h1 className="font-display text-[clamp(2.25rem,5vw,4rem)] font-medium leading-[1.05] text-secondary text-balance">
-            Ortodoncia avanzada para una sonrisa que te representa.
+            {t("title")}
           </h1>
           <p className="mt-6 max-w-lg text-base leading-relaxed text-text-muted sm:text-lg">
-            En Clínica Avanzada combinamos atención especializada, tecnología
-            moderna y una planificación de tratamiento pensada para cada
-            paciente en particular.
+            {t("description")}
           </p>
         </motion.div>
 
@@ -48,17 +50,17 @@ export function Hero() {
             icon={<CalendarCheck className="h-5 w-5" />}
             onClick={() => track("appointment_started", { source: "hero" })}
           >
-            Agendar una consulta
+            {t("bookCta")}
           </Button>
           <Button
-            href={buildWhatsappUrl(whatsappBaseMessage)}
+            href={buildWhatsappUrl(tw("base"))}
             external
             variant="whatsapp"
             size="lg"
             icon={<MessageCircle className="h-5 w-5" fill="white" strokeWidth={0} />}
             onClick={() => track("whatsapp_clicked", { source: "hero" })}
           >
-            Hablar por WhatsApp
+            {t("whatsappCta")}
           </Button>
         </div>
       </Container>

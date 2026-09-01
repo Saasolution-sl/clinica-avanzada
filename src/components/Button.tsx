@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 import type { ReactNode } from "react";
 
@@ -69,7 +69,9 @@ export function Button(props: ButtonAsLink | ButtonAsButton) {
       );
     }
     return (
-      <Link href={props.href} onClick={props.onClick} className={classes}>
+      // next-intl's typed Link expects a known pathname key; Button accepts
+      // any internal path string, so we widen the type at this boundary.
+      <Link href={props.href as Parameters<typeof Link>[0]["href"]} onClick={props.onClick} className={classes}>
         {icon}
         {children}
       </Link>

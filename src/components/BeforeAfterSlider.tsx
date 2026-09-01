@@ -2,22 +2,22 @@
 
 import { useRef, useState, useCallback } from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { PhotoPlaceholder } from "./PhotoPlaceholder";
 import { cn } from "@/lib/utils";
 
 export function BeforeAfterSlider({
   className,
-  beforeLabel = "ANTES",
-  afterLabel = "DESPUÉS",
   beforeImage,
   afterImage,
 }: {
   className?: string;
-  beforeLabel?: string;
-  afterLabel?: string;
   beforeImage?: string;
   afterImage?: string;
 }) {
+  const t = useTranslations("cases");
+  const beforeLabel = t("before").toUpperCase();
+  const afterLabel = t("after").toUpperCase();
   const [position, setPosition] = useState(50);
   const containerRef = useRef<HTMLDivElement>(null);
   const dragging = useRef(false);
@@ -89,7 +89,7 @@ export function BeforeAfterSlider({
       <div
         role="slider"
         tabIndex={0}
-        aria-label="Comparar antes y después"
+        aria-label={t("compareAria")}
         aria-valuenow={Math.round(position)}
         aria-valuemin={0}
         aria-valuemax={100}

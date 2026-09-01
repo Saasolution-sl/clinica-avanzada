@@ -1,16 +1,27 @@
 import { z } from "zod";
+import type { Locale } from "@/i18n/routing";
 
+/**
+ * Structural schema used for the request body shape and as a server-side
+ * safety net. Field-level, user-facing validation messages are localized
+ * client-side in BookingForm (built from the "booking.validation" message
+ * namespace) so the visitor always sees errors in their selected language;
+ * this schema's own messages are an internal fallback, not shown in the
+ * normal flow.
+ */
 export const appointmentSchema = z.object({
-  firstName: z.string().min(1, "Ingresá tu nombre"),
-  lastName: z.string().min(1, "Ingresá tu apellido"),
-  phone: z.string().min(6, "Ingresá un teléfono válido"),
-  whatsapp: z.string().min(6, "Ingresá un número de WhatsApp válido"),
-  email: z.string().email("Ingresá un email válido"),
-  treatmentSlug: z.string().min(1, "Seleccioná un tipo de consulta"),
-  preferredDate: z.string().min(1, "Seleccioná una fecha"),
-  preferredTime: z.string().min(1, "Seleccioná un horario"),
+  firstName: z.string().min(1, "Required"),
+  lastName: z.string().min(1, "Required"),
+  phone: z.string().min(6, "Invalid phone number"),
+  whatsapp: z.string().min(6, "Invalid WhatsApp number"),
+  email: z.string().email("Invalid email"),
+  treatmentSlug: z.string().min(1, "Required"),
+  preferredDate: z.string().min(1, "Required"),
+  preferredTime: z.string().min(1, "Required"),
   patientStatus: z.enum(["nuevo", "existente"]),
   message: z.string().optional(),
+  /** The visitor's website language at the time of booking — see src/lib/medicalos.ts */
+  preferredLanguage: z.enum(["es", "pt", "en", "de"]),
 });
 
 export type AppointmentRequest = z.infer<typeof appointmentSchema>;
@@ -34,4 +45,11 @@ export async function submitAppointment(data: AppointmentRequest) {
   }
 
   return res.json() as Promise<{ ok: true }>;
+}
+
+export function currentLocaleFromPath(pathname: string): Locale {
+  const seg = pathname.split("/")[1];
+  return (["es", "pt", "en", "de"] as const).includes(seg as Locale)
+    ? (seg as Locale)
+    : "es";
 }

@@ -1,0 +1,295 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "treatments": "Tratamientos",
+    "cases": "Casos clínicos",
+    "team": "Equipo",
+    "clinic": "La clínica",
+    "faq": "Preguntas frecuentes",
+    "contact": "Contacto",
+    "bookCta": "Agendar consulta",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
+  },
+  "language": {
+    "label": "Idioma",
+    "es": "Español",
+    "pt": "Português",
+    "en": "English",
+    "de": "Deutsch"
+  },
+  "hero": {
+    "eyebrow": "Ortodoncia · Estética dental · Paraguay",
+    "title": "Ortodoncia avanzada para una sonrisa que te representa.",
+    "description": "En Clínica Avanzada combinamos atención especializada, tecnología moderna y una planificación de tratamiento pensada para cada paciente en particular.",
+    "bookCta": "Agendar una consulta",
+    "whatsappCta": "Hablar por WhatsApp"
+  },
+  "trust": {
+    "eyebrow": "Por qué elegirnos",
+    "title": "Una clínica pensada alrededor del paciente",
+    "items": [
+      {
+        "title": "Atención especializada",
+        "description": "Cada plan de tratamiento se construye a partir de la evaluación clínica individual del paciente."
+      },
+      {
+        "title": "Tecnología avanzada",
+        "description": "Diagnóstico y planificación de tratamiento apoyados en herramientas modernas de ortodoncia."
+      },
+      {
+        "title": "Tratamientos personalizados",
+        "description": "No todas las sonrisas reciben el mismo enfoque: el plan se adapta a cada diagnóstico."
+      },
+      {
+        "title": "Seguimiento profesional",
+        "description": "Comunicación clara durante cada etapa, desde la primera consulta hasta la retención."
+      }
+    ]
+  },
+  "treatmentsSection": {
+    "eyebrow": "Tratamientos",
+    "title": "Conocé nuestros tratamientos",
+    "description": "Ortodoncia y estética dental con un plan diseñado para cada paciente.",
+    "viewAll": "Ver todos",
+    "learnMore": "Conocer más",
+    "placeholderBadge": "Contenido a confirmar",
+    "whatIsIt": "¿Qué es?",
+    "whoFor": "¿Para quién es?",
+    "howItWorks": "Cómo funciona el proceso",
+    "benefits": "Beneficios",
+    "faqTitle": "Preguntas frecuentes",
+    "disclaimer": "La información de esta página es general y no reemplaza una evaluación clínica individual. No garantizamos resultados ni plazos específicos: estos se definen en la consulta con el especialista.",
+    "bookEvaluation": "Agendar una evaluación",
+    "consultWhatsapp": "Consultar por WhatsApp",
+    "listTitle": "Tratamientos de ortodoncia",
+    "listDescription": "Cada tratamiento comienza con una evaluación clínica individual para definir el enfoque más adecuado."
+  },
+  "journey": {
+    "eyebrow": "Cómo funciona",
+    "title": "El recorrido de tu tratamiento",
+    "steps": [
+      {
+        "title": "Primera consulta",
+        "description": "Conversamos sobre tus inquietudes y objetivos junto al especialista."
+      },
+      {
+        "title": "Diagnóstico",
+        "description": "Examen clínico y estudios complementarios según cada caso."
+      },
+      {
+        "title": "Plan de tratamiento",
+        "description": "Presentación de la estrategia de tratamiento recomendada."
+      },
+      {
+        "title": "Inicio",
+        "description": "Comienzo del tratamiento de ortodoncia acordado."
+      },
+      {
+        "title": "Seguimiento",
+        "description": "Controles clínicos regulares para monitorear el progreso."
+      },
+      {
+        "title": "Retención",
+        "description": "Acompañamiento para ayudar a mantener el resultado alcanzado."
+      }
+    ]
+  },
+  "instagram": {
+    "eyebrow": "Redes sociales",
+    "title": "Seguinos en Instagram",
+    "description": "Contenido, tratamientos y novedades de la clínica, directamente en nuestro perfil."
+  },
+  "finalCta": {
+    "eyebrow": "Empecemos",
+    "title": "Tu sonrisa merece un plan hecho a tu medida",
+    "description": "Agendá tu consulta o escribinos por WhatsApp y damos el primer paso juntos.",
+    "bookCta": "Agendar una consulta",
+    "contactCta": "Ver datos de contacto"
+  },
+  "cases": {
+    "eyebrow": "Resultados",
+    "title": "Casos clínicos",
+    "description": "Publicamos únicamente casos con autorización expresa del paciente. Deslizá cada imagen para comparar antes y después.",
+    "empty": "Todavía no contamos con casos clínicos autorizados para publicar en el sitio. Esta sección se actualizará en cuanto la clínica confirme casos con consentimiento firmado del paciente.",
+    "emptyFiltered": "No hay casos publicados en esta categoría por el momento.",
+    "before": "Antes",
+    "after": "Después",
+    "compareAria": "Comparar antes y después",
+    "filters": {
+      "all": "Todos",
+      "aligners": "Alineadores",
+      "braces": "Brackets",
+      "adults": "Adultos",
+      "teens": "Adolescentes"
+    },
+    "initialSituation": "Situación inicial",
+    "treatmentSelected": "Tratamiento seleccionado",
+    "approach": "Enfoque"
+  },
+  "team": {
+    "eyebrow": "Especialistas",
+    "title": "Nuestro equipo",
+    "description": "Elegís un especialista, no simplemente un servicio dental.",
+    "photoPending": "Foto profesional",
+    "education": "Formación",
+    "certifications": "Certificaciones",
+    "expertise": "Áreas de especialización"
+  },
+  "clinic": {
+    "eyebrow": "Nuestro espacio",
+    "title": "Nuestra clínica",
+    "description": "Un ambiente pensado para que cada visita sea clara, cómoda y profesional.",
+    "spaces": [
+      "Recepción",
+      "Sala de tratamiento",
+      "Equipamiento",
+      "Tecnología de diagnóstico",
+      "Ambiente para pacientes"
+    ],
+    "photosNote": "Las fotografías reales de la clínica todavía no están disponibles para este sitio. Esta sección usa marcadores de posición hasta contar con material fotográfico autorizado por la clínica."
+  },
+  "faq": {
+    "eyebrow": "Ayuda",
+    "title": "Preguntas frecuentes",
+    "description": "Información general sobre ortodoncia. Cada tratamiento se evalúa de forma individual en la consulta.",
+    "items": [
+      {
+        "question": "¿Cuándo debería realizarse la primera consulta de ortodoncia?",
+        "answer": "Una primera consulta de evaluación es útil apenas surge la inquietud, sin importar la edad. El especialista determinará, según cada caso, el momento más adecuado para iniciar un tratamiento."
+      },
+      {
+        "question": "¿Los adultos pueden realizarse ortodoncia?",
+        "answer": "Sí, la ortodoncia en adultos es una práctica habitual. El plan de tratamiento se adapta a la situación clínica particular de cada paciente, sin importar la edad."
+      },
+      {
+        "question": "¿Brackets o alineadores?",
+        "answer": "La elección depende del diagnóstico, la complejidad del caso y las preferencias del paciente. El especialista evaluará cuál alternativa es la más adecuada durante la consulta."
+      },
+      {
+        "question": "¿La ortodoncia duele?",
+        "answer": "Es común sentir cierta molestia o sensibilidad, especialmente en los primeros días tras la colocación o algunos controles. El equipo puede orientar sobre cómo manejar esa sensibilidad."
+      },
+      {
+        "question": "¿Cuánto dura un tratamiento?",
+        "answer": "La duración varía según el diagnóstico y la complejidad de cada caso. El especialista brinda una estimación personalizada durante la evaluación inicial, que puede ajustarse durante el tratamiento."
+      },
+      {
+        "question": "¿Cada cuánto son los controles?",
+        "answer": "La frecuencia de los controles la define el especialista según el tipo de tratamiento y su evolución. Mantener la asistencia a los controles es importante para el progreso del tratamiento."
+      },
+      {
+        "question": "¿Qué sucede después de terminar la ortodoncia?",
+        "answer": "Habitualmente se indica una fase de retención para ayudar a mantener el resultado alcanzado. El especialista explicará el esquema de retención recomendado para cada caso."
+      },
+      {
+        "question": "¿Necesito estudios antes de comenzar?",
+        "answer": "Según el diagnóstico, el especialista puede solicitar estudios complementarios (como radiografías) para planificar el tratamiento de forma adecuada."
+      },
+      {
+        "question": "¿Cómo puedo agendar una consulta?",
+        "answer": "Podés agendar una consulta completando el formulario en la página de Agendar, o escribiendo directamente por WhatsApp desde cualquier página del sitio."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Estamos para ayudarte",
+    "description": "Escribinos por WhatsApp o agendá tu consulta directamente.",
+    "address": "Dirección",
+    "phone": "Teléfono",
+    "whatsapp": "WhatsApp",
+    "whatsappCta": "Escribinos por WhatsApp",
+    "email": "Email",
+    "toConfirm": "A confirmar",
+    "hours": "Horarios",
+    "instagram": "Instagram",
+    "directions": "Cómo llegar",
+    "mapUnavailable": "El mapa se activará en cuanto la clínica confirme su dirección exacta. No publicamos una ubicación sin verificar."
+  },
+  "booking": {
+    "eyebrow": "Agendar",
+    "title": "Agendá tu consulta",
+    "description": "Completá tus datos y nos pondremos en contacto para confirmar día y horario.",
+    "fields": {
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "phone": "Teléfono",
+      "whatsapp": "WhatsApp",
+      "email": "Email",
+      "treatment": "Tipo de consulta",
+      "treatmentPlaceholder": "Seleccioná una opción",
+      "patientStatus": "Paciente",
+      "newPatient": "Nuevo paciente",
+      "existingPatient": "Paciente existente",
+      "preferredDate": "Fecha preferida",
+      "preferredTime": "Horario preferido",
+      "message": "Mensaje (opcional)"
+    },
+    "submit": "Agendar consulta",
+    "submitting": "Enviando…",
+    "successTitle": "¡Listo, {name}!",
+    "successBody": "Recibimos tu solicitud de consulta. Nos pondremos en contacto a la brevedad para confirmar día y horario.",
+    "continueWhatsapp": "Continuar por WhatsApp",
+    "genericError": "No pudimos enviar tu solicitud en este momento. Podés intentar de nuevo o escribirnos por WhatsApp.",
+    "validation": {
+      "firstName": "Ingresá tu nombre",
+      "lastName": "Ingresá tu apellido",
+      "phone": "Ingresá un teléfono válido",
+      "whatsapp": "Ingresá un número de WhatsApp válido",
+      "email": "Ingresá un email válido",
+      "treatment": "Seleccioná un tipo de consulta",
+      "preferredDate": "Seleccioná una fecha",
+      "preferredTime": "Seleccioná un horario"
+    }
+  },
+  "whatsapp": {
+    "base": "Hola Clínica Avanzada 👋 Me gustaría recibir información y agendar una consulta.",
+    "treatment": "Hola Clínica Avanzada 👋 Me gustaría recibir información sobre {treatment}.",
+    "bookingConfirmation": "Hola Clínica Avanzada 👋 Acabo de agendar una consulta ({treatment}) como {name}. Quisiera confirmar los detalles."
+  },
+  "cookies": {
+    "bannerText": "Usamos cookies esenciales para el funcionamiento del sitio y, con tu consentimiento, cookies de análisis para entender cómo se usa.",
+    "moreInfo": "Más información",
+    "decline": "Rechazar no esenciales",
+    "accept": "Aceptar todas",
+    "pageTitle": "Política de cookies",
+    "intro": "Este sitio utiliza cookies esenciales, necesarias para su funcionamiento básico, y opcionalmente cookies de análisis (por ejemplo, Google Analytics) y de marketing (por ejemplo, Meta Pixel), que solo se cargan si aceptás su uso en el aviso de cookies.",
+    "essential": "Esenciales",
+    "essentialDesc": "Recuerdan tu preferencia de cookies y permiten el funcionamiento del sitio.",
+    "analytics": "Análisis (opcional)",
+    "analyticsDesc": "Nos ayudan a entender cómo se usa el sitio para mejorarlo.",
+    "marketing": "Marketing (opcional)",
+    "marketingDesc": "Permiten medir la efectividad de campañas.",
+    "outro": "Podés cambiar tu preferencia en cualquier momento borrando los datos de este sitio en la configuración de tu navegador."
+  },
+  "privacy": {
+    "pageTitle": "Política de privacidad",
+    "p1": "Esta política describe, en términos generales, cómo Clínica Avanzada trata la información que los visitantes comparten a través de este sitio (por ejemplo, al completar el formulario de agendamiento de consultas).",
+    "notice": "Aviso:",
+    "p2": "el texto legal específico de esta política (responsable del tratamiento, datos de contacto legales, base legal aplicable en Paraguay, plazos de conservación, y procedimiento para ejercer derechos de acceso/rectificación/eliminación) debe ser redactado o revisado por la clínica y/o un asesor legal antes de la publicación. No se ha inventado información corporativa o legal para completar este texto.",
+    "p3": "Los datos enviados a través del formulario de agendamiento (nombre, apellido, teléfono, WhatsApp, email, tipo de consulta y mensaje) se utilizan exclusivamente para gestionar la solicitud de consulta y contactar al paciente."
+  },
+  "notFound": {
+    "title": "No encontramos esta página",
+    "description": "Puede que el enlace esté roto o que la página se haya movido.",
+    "cta": "Volver al inicio"
+  },
+  "footer": {
+    "description": "Ortodoncia y estética dental con atención especializada y planificación de tratamiento personalizada.",
+    "navTitle": "Navegación",
+    "treatmentsTitle": "Tratamientos",
+    "contactTitle": "Contacto",
+    "phoneLabel": "Tel/WhatsApp",
+    "rights": "Todos los derechos reservados.",
+    "privacy": "Política de privacidad",
+    "cookiesLink": "Política de cookies"
+  },
+  "hours": {
+    "mondayFriday": "Lunes a Viernes",
+    "saturday": "Sábado"
+  },
+  "common": {
+    "placeholderBadge": "Contenido a confirmar"
+  }
+}

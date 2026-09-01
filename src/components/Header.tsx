@@ -1,28 +1,32 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
+import { usePathname, Link } from "@/i18n/navigation";
 import { Menu, X, MessageCircle } from "lucide-react";
 import { Button } from "./Button";
 import { Container } from "./Container";
-import { buildWhatsappUrl, whatsappBaseMessage } from "@/content/site";
+import { LanguageSwitcher } from "./LanguageSwitcher";
+import { buildWhatsappUrl } from "@/content/site";
 import { track } from "@/lib/analytics";
 
-const NAV_LINKS = [
-  { href: "/", label: "Inicio" },
-  { href: "/tratamientos", label: "Tratamientos" },
-  { href: "/casos-clinicos", label: "Casos clínicos" },
-  { href: "/equipo", label: "Equipo" },
-  { href: "/clinica", label: "La clínica" },
-  { href: "/preguntas-frecuentes", label: "Preguntas frecuentes" },
-  { href: "/contacto", label: "Contacto" },
-];
-
 export function Header() {
+  const t = useTranslations("nav");
+  const th = useTranslations("hero");
+  const tw = useTranslations("whatsapp");
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
+
+  const NAV_LINKS = [
+    { href: "/" as const, label: t("home") },
+    { href: "/tratamientos" as const, label: t("treatments") },
+    { href: "/casos-clinicos" as const, label: t("cases") },
+    { href: "/equipo" as const, label: t("team") },
+    { href: "/clinica" as const, label: t("clinic") },
+    { href: "/preguntas-frecuentes" as const, label: t("faq") },
+    { href: "/contacto" as const, label: t("contact") },
+  ];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -70,20 +74,24 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden lg:block">
+        <div className="hidden items-center gap-3 lg:flex">
+          <LanguageSwitcher />
           <Button href="/agendar" variant="primary" size="md">
-            Agendar consulta
+            {t("bookCta")}
           </Button>
         </div>
 
-        <button
-          aria-label={open ? "Cerrar menú" : "Abrir menú"}
-          aria-expanded={open}
-          onClick={() => setOpen((v) => !v)}
-          className="flex h-11 w-11 items-center justify-center rounded-full text-secondary lg:hidden"
-        >
-          {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-        </button>
+        <div className="flex items-center gap-2 lg:hidden">
+          <LanguageSwitcher />
+          <button
+            aria-label={open ? t("closeMenu") : t("openMenu")}
+            aria-expanded={open}
+            onClick={() => setOpen((v) => !v)}
+            className="flex h-11 w-11 items-center justify-center rounded-full text-secondary"
+          >
+            {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
+        </div>
       </Container>
 
       {open && (
@@ -101,10 +109,10 @@ export function Header() {
           </nav>
           <div className="flex flex-col gap-3 pt-6">
             <Button href="/agendar" variant="primary" size="lg" className="w-full">
-              Agendar consulta
+              {t("bookCta")}
             </Button>
             <Button
-              href={buildWhatsappUrl(whatsappBaseMessage)}
+              href={buildWhatsappUrl(tw("base"))}
               external
               variant="whatsapp"
               size="lg"
@@ -112,7 +120,7 @@ export function Header() {
               icon={<MessageCircle className="h-5 w-5" fill="white" strokeWidth={0} />}
               onClick={() => track("whatsapp_clicked", { source: "mobile_menu" })}
             >
-              Hablar por WhatsApp
+              {th("whatsappCta")}
             </Button>
           </div>
         </div>

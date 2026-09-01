@@ -1,4 +1,4 @@
-import type { Faq } from "@/content/faqs";
+import type { Faq } from "./FAQAccordion";
 
 export function FaqJsonLd({ faqs }: { faqs: Faq[] }) {
   const jsonLd = {

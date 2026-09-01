@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
-import type { Faq } from "@/content/faqs";
 import { cn } from "@/lib/utils";
+
+export type Faq = { question: string; answer: string };
 
 export function FAQAccordion({ faqs }: { faqs: Faq[] }) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);

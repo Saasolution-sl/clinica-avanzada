@@ -1,0 +1,295 @@
+{
+  "nav": {
+    "home": "Home",
+    "treatments": "Treatments",
+    "cases": "Clinical cases",
+    "team": "Team",
+    "clinic": "Our clinic",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "bookCta": "Book a consultation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "language": {
+    "label": "Language",
+    "es": "Español",
+    "pt": "Português",
+    "en": "English",
+    "de": "Deutsch"
+  },
+  "hero": {
+    "eyebrow": "Orthodontics · Dental aesthetics · Paraguay",
+    "title": "Advanced orthodontics for a smile that represents you.",
+    "description": "At Clínica Avanzada we combine specialist care, modern technology, and treatment planning built around each individual patient.",
+    "bookCta": "Book a consultation",
+    "whatsappCta": "Contact us on WhatsApp"
+  },
+  "trust": {
+    "eyebrow": "Why choose us",
+    "title": "A clinic built around the patient",
+    "items": [
+      {
+        "title": "Specialist care",
+        "description": "Every treatment plan is built from an individual clinical evaluation of the patient."
+      },
+      {
+        "title": "Advanced technology",
+        "description": "Diagnosis and treatment planning supported by modern orthodontic tools."
+      },
+      {
+        "title": "Personalized treatments",
+        "description": "Not every smile gets the same approach: the plan is adapted to each diagnosis."
+      },
+      {
+        "title": "Professional follow-up",
+        "description": "Clear communication at every stage, from the first consultation through retention."
+      }
+    ]
+  },
+  "treatmentsSection": {
+    "eyebrow": "Treatments",
+    "title": "Explore our treatments",
+    "description": "Orthodontics and dental aesthetics with a plan designed for each patient.",
+    "viewAll": "View all",
+    "learnMore": "Learn more",
+    "placeholderBadge": "Content to be confirmed",
+    "whatIsIt": "What is it?",
+    "whoFor": "Who is it for?",
+    "howItWorks": "How the process works",
+    "benefits": "Benefits",
+    "faqTitle": "Frequently asked questions",
+    "disclaimer": "The information on this page is general and does not replace an individual clinical evaluation. We do not guarantee specific results or timelines: these are determined during the consultation with the specialist.",
+    "bookEvaluation": "Book an evaluation",
+    "consultWhatsapp": "Ask on WhatsApp",
+    "listTitle": "Orthodontic treatments",
+    "listDescription": "Every treatment starts with an individual clinical evaluation to define the most suitable approach."
+  },
+  "journey": {
+    "eyebrow": "How it works",
+    "title": "Your treatment journey",
+    "steps": [
+      {
+        "title": "First consultation",
+        "description": "We discuss your concerns and goals together with the specialist."
+      },
+      {
+        "title": "Diagnosis",
+        "description": "Clinical examination and any diagnostic studies required for your case."
+      },
+      {
+        "title": "Treatment plan",
+        "description": "Presentation of the recommended treatment strategy."
+      },
+      {
+        "title": "Start",
+        "description": "Beginning of the agreed orthodontic treatment."
+      },
+      {
+        "title": "Follow-up",
+        "description": "Regular clinical check-ups to monitor progress."
+      },
+      {
+        "title": "Retention",
+        "description": "Support to help maintain the result achieved."
+      }
+    ]
+  },
+  "instagram": {
+    "eyebrow": "Social media",
+    "title": "Follow us on Instagram",
+    "description": "Content, treatments, and clinic updates, straight from our profile."
+  },
+  "finalCta": {
+    "eyebrow": "Let's get started",
+    "title": "Your smile deserves a plan made for you",
+    "description": "Book your consultation or message us on WhatsApp, and let's take the first step together.",
+    "bookCta": "Book a consultation",
+    "contactCta": "View contact details"
+  },
+  "cases": {
+    "eyebrow": "Results",
+    "title": "Clinical cases",
+    "description": "We only publish cases with the patient's explicit authorization. Drag each image to compare before and after.",
+    "empty": "We don't yet have authorized clinical cases to publish on the site. This section will be updated once the clinic confirms cases with signed patient consent.",
+    "emptyFiltered": "There are no cases published in this category at the moment.",
+    "before": "Before",
+    "after": "After",
+    "compareAria": "Compare before and after",
+    "filters": {
+      "all": "All",
+      "aligners": "Aligners",
+      "braces": "Braces",
+      "adults": "Adults",
+      "teens": "Teens"
+    },
+    "initialSituation": "Initial situation",
+    "treatmentSelected": "Treatment selected",
+    "approach": "Approach"
+  },
+  "team": {
+    "eyebrow": "Specialists",
+    "title": "Our team",
+    "description": "You're choosing a specialist, not just a dental service.",
+    "photoPending": "Professional photo",
+    "education": "Education",
+    "certifications": "Certifications",
+    "expertise": "Areas of expertise"
+  },
+  "clinic": {
+    "eyebrow": "Our space",
+    "title": "Our clinic",
+    "description": "An environment designed so every visit feels clear, comfortable, and professional.",
+    "spaces": [
+      "Reception",
+      "Treatment room",
+      "Equipment",
+      "Diagnostic technology",
+      "Patient environment"
+    ],
+    "photosNote": "Real photos of the clinic aren't available for this site yet. This section uses placeholders until authorized photography from the clinic is available."
+  },
+  "faq": {
+    "eyebrow": "Help",
+    "title": "Frequently asked questions",
+    "description": "General information about orthodontics. Each treatment is evaluated individually during the consultation.",
+    "items": [
+      {
+        "question": "When should I have my first orthodontic consultation?",
+        "answer": "An initial evaluation is useful as soon as the question comes up, regardless of age. The specialist will determine, case by case, the most suitable time to start treatment."
+      },
+      {
+        "question": "Can adults get orthodontic treatment?",
+        "answer": "Yes, orthodontics for adults is common practice. The treatment plan is adapted to each patient's specific clinical situation, regardless of age."
+      },
+      {
+        "question": "Braces or aligners?",
+        "answer": "The choice depends on the diagnosis, the complexity of the case, and the patient's preferences. The specialist will assess which option is most suitable during the consultation."
+      },
+      {
+        "question": "Does orthodontic treatment hurt?",
+        "answer": "Some discomfort or sensitivity is common, especially in the first days after placement or certain adjustments. The team can advise on how to manage that sensitivity."
+      },
+      {
+        "question": "How long does treatment take?",
+        "answer": "Duration varies depending on the diagnosis and complexity of each case. The specialist provides a personalized estimate during the initial evaluation, which may be adjusted during treatment."
+      },
+      {
+        "question": "How often are check-ups?",
+        "answer": "The frequency of check-ups is set by the specialist based on the type of treatment and its progress. Keeping up with check-ups matters for the treatment's progress."
+      },
+      {
+        "question": "What happens after orthodontic treatment ends?",
+        "answer": "A retention phase is usually recommended to help maintain the result achieved. The specialist will explain the recommended retention plan for each case."
+      },
+      {
+        "question": "Do I need any studies before starting?",
+        "answer": "Depending on the diagnosis, the specialist may request additional studies (such as X-rays) to plan treatment appropriately."
+      },
+      {
+        "question": "How can I book a consultation?",
+        "answer": "You can book a consultation by filling out the form on the Book page, or by messaging us directly on WhatsApp from any page on the site."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "We're here to help",
+    "description": "Message us on WhatsApp or book your consultation directly.",
+    "address": "Address",
+    "phone": "Phone",
+    "whatsapp": "WhatsApp",
+    "whatsappCta": "Message us on WhatsApp",
+    "email": "Email",
+    "toConfirm": "To be confirmed",
+    "hours": "Opening hours",
+    "instagram": "Instagram",
+    "directions": "Get directions",
+    "mapUnavailable": "The map will go live once the clinic confirms its exact address. We don't publish an unverified location."
+  },
+  "booking": {
+    "eyebrow": "Booking",
+    "title": "Book your consultation",
+    "description": "Fill in your details and we'll get in touch to confirm a day and time.",
+    "fields": {
+      "firstName": "First name",
+      "lastName": "Last name",
+      "phone": "Phone",
+      "whatsapp": "WhatsApp",
+      "email": "Email",
+      "treatment": "Type of consultation",
+      "treatmentPlaceholder": "Select an option",
+      "patientStatus": "Patient",
+      "newPatient": "New patient",
+      "existingPatient": "Existing patient",
+      "preferredDate": "Preferred date",
+      "preferredTime": "Preferred time",
+      "message": "Message (optional)"
+    },
+    "submit": "Book consultation",
+    "submitting": "Sending…",
+    "successTitle": "All set, {name}!",
+    "successBody": "We've received your consultation request. We'll be in touch shortly to confirm a day and time.",
+    "continueWhatsapp": "Continue on WhatsApp",
+    "genericError": "We couldn't send your request right now. You can try again or message us on WhatsApp.",
+    "validation": {
+      "firstName": "Enter your first name",
+      "lastName": "Enter your last name",
+      "phone": "Enter a valid phone number",
+      "whatsapp": "Enter a valid WhatsApp number",
+      "email": "Enter a valid email",
+      "treatment": "Select a type of consultation",
+      "preferredDate": "Select a date",
+      "preferredTime": "Select a time"
+    }
+  },
+  "whatsapp": {
+    "base": "Hello Clínica Avanzada 👋 I would like more information and to book a consultation.",
+    "treatment": "Hello Clínica Avanzada 👋 I would like more information about {treatment}.",
+    "bookingConfirmation": "Hello Clínica Avanzada 👋 I just booked a consultation ({treatment}) as {name}. I'd like to confirm the details."
+  },
+  "cookies": {
+    "bannerText": "We use essential cookies for the site to work and, with your consent, analytics cookies to understand how it's used.",
+    "moreInfo": "Learn more",
+    "decline": "Decline non-essential",
+    "accept": "Accept all",
+    "pageTitle": "Cookie policy",
+    "intro": "This site uses essential cookies, required for basic functionality, and optionally analytics cookies (e.g. Google Analytics) and marketing cookies (e.g. Meta Pixel), which are only loaded if you accept their use in the cookie notice.",
+    "essential": "Essential",
+    "essentialDesc": "Remember your cookie preference and enable the site to function.",
+    "analytics": "Analytics (optional)",
+    "analyticsDesc": "Help us understand how the site is used so we can improve it.",
+    "marketing": "Marketing (optional)",
+    "marketingDesc": "Allow us to measure campaign effectiveness.",
+    "outro": "You can change your preference at any time by clearing this site's data in your browser settings."
+  },
+  "privacy": {
+    "pageTitle": "Privacy policy",
+    "p1": "This policy describes, in general terms, how Clínica Avanzada handles the information visitors share through this site (for example, when filling out the appointment booking form).",
+    "notice": "Notice:",
+    "p2": "the specific legal text of this policy (data controller, legal contact details, applicable legal basis in Paraguay, retention periods, and the procedure for exercising access/rectification/deletion rights) must be drafted or reviewed by the clinic and/or a legal advisor before publication. No corporate or legal information has been invented to fill in this text.",
+    "p3": "Data submitted through the booking form (first name, last name, phone, WhatsApp, email, type of consultation, and message) is used exclusively to manage the consultation request and contact the patient."
+  },
+  "notFound": {
+    "title": "We couldn't find this page",
+    "description": "The link may be broken, or the page may have moved.",
+    "cta": "Back to home"
+  },
+  "footer": {
+    "description": "Orthodontics and dental aesthetics with specialist care and personalized treatment planning.",
+    "navTitle": "Navigation",
+    "treatmentsTitle": "Treatments",
+    "contactTitle": "Contact",
+    "phoneLabel": "Phone/WhatsApp",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy policy",
+    "cookiesLink": "Cookie policy"
+  },
+  "hours": {
+    "mondayFriday": "Monday to Friday",
+    "saturday": "Saturday"
+  },
+  "common": {
+    "placeholderBadge": "Content to be confirmed"
+  }
+}

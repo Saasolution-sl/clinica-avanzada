@@ -1,10 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { getStoredConsent, setStoredConsent } from "@/lib/consent";
 
 export function CookieBanner() {
+  const t = useTranslations("cookies");
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -16,10 +18,9 @@ export function CookieBanner() {
   return (
     <div className="fixed inset-x-0 bottom-0 z-[60] border-t border-border bg-white p-5 shadow-lifted sm:bottom-4 sm:left-4 sm:right-auto sm:max-w-md sm:rounded-2xl sm:border">
       <p className="text-sm text-text-muted">
-        Usamos cookies esenciales para el funcionamiento del sitio y, con tu
-        consentimiento, cookies de análisis para entender cómo se usa.{" "}
+        {t("bannerText")}{" "}
         <Link href="/cookies" className="underline text-primary">
-          Más información
+          {t("moreInfo")}
         </Link>
         .
       </p>
@@ -31,7 +32,7 @@ export function CookieBanner() {
           }}
           className="flex-1 rounded-full border border-border px-4 py-2 text-sm font-medium"
         >
-          Rechazar no esenciales
+          {t("decline")}
         </button>
         <button
           onClick={() => {
@@ -40,7 +41,7 @@ export function CookieBanner() {
           }}
           className="flex-1 rounded-full bg-primary px-4 py-2 text-sm font-medium text-white"
         >
-          Aceptar todas
+          {t("accept")}
         </button>
       </div>
     </div>

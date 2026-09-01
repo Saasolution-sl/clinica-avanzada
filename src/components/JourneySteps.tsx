@@ -1,59 +1,27 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { Container } from "./Container";
 import { SectionHeading } from "./SectionHeading";
 
-const STEPS = [
-  {
-    number: "01",
-    title: "Primera consulta",
-    description:
-      "Conversamos sobre tus inquietudes y objetivos junto al especialista.",
-  },
-  {
-    number: "02",
-    title: "Diagnóstico",
-    description:
-      "Examen clínico y estudios complementarios según cada caso.",
-  },
-  {
-    number: "03",
-    title: "Plan de tratamiento",
-    description: "Presentación de la estrategia de tratamiento recomendada.",
-  },
-  {
-    number: "04",
-    title: "Inicio",
-    description: "Comienzo del tratamiento de ortodoncia acordado.",
-  },
-  {
-    number: "05",
-    title: "Seguimiento",
-    description: "Controles clínicos regulares para monitorear el progreso.",
-  },
-  {
-    number: "06",
-    title: "Retención",
-    description:
-      "Acompañamiento para ayudar a mantener el resultado alcanzado.",
-  },
-];
-
 export function JourneySteps() {
+  const t = useTranslations("journey");
+  const steps = t.raw("steps") as { title: string; description: string }[];
+
   return (
     <section className="bg-surface-muted py-20 md:py-28">
       <Container>
         <SectionHeading
-          eyebrow="Cómo funciona"
-          title="El recorrido de tu tratamiento"
+          eyebrow={t("eyebrow")}
+          title={t("title")}
           align="center"
           className="mx-auto"
         />
         <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {STEPS.map((step, i) => (
+          {steps.map((step, i) => (
             <motion.div
-              key={step.number}
+              key={step.title}
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
@@ -61,7 +29,7 @@ export function JourneySteps() {
               className="rounded-2xl bg-surface p-7 shadow-softer"
             >
               <span className="font-display text-3xl text-primary-light">
-                {step.number}
+                {String(i + 1).padStart(2, "0")}
               </span>
               <h3 className="mt-3 font-display text-lg font-medium text-secondary">
                 {step.title}

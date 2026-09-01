@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
  */
 export function PhotoPlaceholder({
   className,
-  label = "Fotografía de la clínica — pendiente",
+  label = "",
 }: {
   className?: string;
   label?: string;

@@ -1,9 +1,13 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { InstagramIcon as Instagram } from "./icons/InstagramIcon";
 import { Container } from "./Container";
 import { SectionHeading } from "./SectionHeading";
 import { Button } from "./Button";
 import { PhotoPlaceholder } from "./PhotoPlaceholder";
 import { site } from "@/content/site";
+import { track } from "@/lib/analytics";
 
 /**
  * The brief asks for an official, supported Instagram integration and
@@ -16,6 +20,7 @@ import { site } from "@/content/site";
  * Business account is available.
  */
 export function InstagramGallery() {
+  const t = useTranslations("instagram");
   const tiles = Array.from({ length: 6 });
 
   return (
@@ -23,11 +28,17 @@ export function InstagramGallery() {
       <Container>
         <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
           <SectionHeading
-            eyebrow="Redes sociales"
-            title="Seguinos en Instagram"
-            description="Contenido, tratamientos y novedades de la clínica, directamente en nuestro perfil."
+            eyebrow={t("eyebrow")}
+            title={t("title")}
+            description={t("description")}
           />
-          <Button href={site.instagram.url} external variant="secondary" icon={<Instagram className="h-4 w-4" />}>
+          <Button
+            href={site.instagram.url}
+            external
+            variant="secondary"
+            icon={<Instagram className="h-4 w-4" />}
+            onClick={() => track("instagram_clicked", { source: "gallery" })}
+          >
             {site.instagram.handle}
           </Button>
         </div>

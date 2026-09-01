@@ -1,8 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { MessageCircle, CalendarCheck } from "lucide-react";
-import { buildWhatsappUrl, whatsappBaseMessage } from "@/content/site";
+import { buildWhatsappUrl } from "@/content/site";
 import { track } from "@/lib/analytics";
 
 /**
@@ -11,6 +13,8 @@ import { track } from "@/lib/analytics";
  * button (see DESIGN-SYSTEM.md > Mobile rules).
  */
 export function MobileStickyBar() {
+  const t = useTranslations("hero");
+  const tw = useTranslations("whatsapp");
   const [hiddenForInput, setHiddenForInput] = useState(false);
 
   useEffect(() => {
@@ -42,16 +46,16 @@ export function MobileStickyBar() {
       }`}
       style={{ paddingBottom: "max(0.75rem, env(safe-area-inset-bottom))" }}
     >
-      <a
+      <Link
         href="/agendar"
         onClick={() => track("appointment_started", { source: "sticky_bar" })}
         className="flex flex-1 items-center justify-center gap-2 rounded-full bg-primary px-4 py-3 text-sm font-medium text-white"
       >
         <CalendarCheck className="h-4 w-4" />
-        Agendar consulta
-      </a>
+        {t("bookCta")}
+      </Link>
       <a
-        href={buildWhatsappUrl(whatsappBaseMessage)}
+        href={buildWhatsappUrl(tw("base"))}
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => track("whatsapp_clicked", { source: "sticky_bar" })}
