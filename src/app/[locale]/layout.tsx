@@ -3,6 +3,7 @@ import { Fraunces, Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -121,6 +122,7 @@ export default async function LocaleLayout({
           <MobileStickyBar />
           <CookieBanner />
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
